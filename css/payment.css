@@ -1,0 +1,93 @@
+/* Popup container */
+#paymentPopup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Popup content */
+.payment-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 400px; /* Maximum width */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Elevation */
+}
+
+/* Close button */
+.payment-close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.payment-close-btn:hover,
+.payment-close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Payment method options */
+.payment-methods {
+  margin-bottom: 20px;
+}
+
+/* Card details inputs */
+.card-inputs {
+  display: none;
+}
+
+/* CSS for the continue button */
+#continueButton {
+  padding: 10px 35px;
+  background-color: #088178;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevation */
+}
+
+/* Hover state for the button */
+#continueButton:hover {
+  background-color: #075b61; /* Darken the background color on hover */
+}
+
+/* CSS for responsive layout */
+@media screen and (max-width: 600px) {
+  .payment-content {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+}
+
+#cardDetails {
+  display: block;
+}
+
+#cardDetails input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+#cardDetails input[type="text"]:focus {
+  border-color: #088178;
+  outline: none;
+}

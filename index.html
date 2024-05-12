@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/address.css" />
+    <link rel="stylesheet" href="css/payment.css" />
+    <link rel="stylesheet" href="css/complete.css" />
+    <link rel="icon" href="assets/icons/shop.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- NavBar start  -->
+
+    <nav id="navBar">
+  <ul id="navListItems">
+    <li><a href="/" target="_blank" class="active">Home</a></li>
+    <li><a href="" target="_blank">Shop</a></li>
+    <li><a href="" target="_blank">Blog</a></li>
+    <li><a href="" target="_blank">About</a></li>
+    <li id="search-container">
+      <input type="search" id="search-input" placeholder="Search...">
+      <button id="search-button" type="submit"><i class="bi bi-search"></i></button>
+    </li>
+    <li id="respBag" onclick="openCartPopup()">
+      <i class="bi bi-bag-dash"></i>
+    </li>
+    <li id="arrowClose"><i class="bi bi-arrow-right-square-fill"></i></li>
+  </ul>
+
+  <div class="responsiveNav">
+    <div id="hamBurger">
+      <i class="bi bi-list"></i>
+    </div>
+
+    <div class="bag">
+      <li>
+        <i class="bi bi-bag-dash"></i>
+      </li>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Bg Home Section  -->
+
+    <div id="selectAll">
+      <section id="bg">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button>Shop Now</button>
+      </section>
+
+      <!-- features Itesm Section   -->
+
+      <section class="section-p1" id="featuresContainer">
+        <div class="items">
+          <img src="assets/icons/box-truck.png" alt="img" />
+          <h6 id="lOne">Free Shipping</h6>
+        </div>
+
+        <div class="items">
+          <img src="assets/icons/order-now.png" alt="img" />
+          <h6 id="lTwo">Online Order</h6>
+        </div>
+
+        <div class="items">
+          <img src="assets/icons/profits.png" alt="img" />
+          <h6 id="lThree">Save Money</h6>
+        </div>
+
+        <div class="items">
+          <img src="assets/icons/shopping-bag.png" alt="img" />
+          <h6 id="lFour">Promotions</h6>
+        </div>
+
+        <div class="items">
+          <img src="assets/icons/discount.png" alt="img" />
+          <h6 id="lFive">Happy Sell</h6>
+        </div>
+
+        <div class="items">
+          <img src="assets/icons/help-desk.png" alt="img" />
+          <h6 id="lSix">F24/7 support</h6>
+        </div>
+      </section>
+
+      <!-- Features Products Items  -->
+
+      <section id="featursProducts" class="section-p1">
+        <div class="define">
+          <h1>Features Products</h1>
+          <p>Summer Collection New Morden Design</p>
+        </div>
+
+        <div class="listContainer">
+          <div class="featuresProcutsItems">
+            <img src="assets/images/shirt.png" alt="img" />
+            <span>adidas</span>
+            <h6>Cotton Lining Digital Printed Stitched Half Sleeve Shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$25</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('adidas','Cotton Stitched Half Sleeve Shirt','25','assets/images/shirt.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/regular_fit.png" alt="img" />
+            <span>roadster</span>
+            <h6>Regular Fit Half Sleeve Men's T-Shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$10</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('roadster','Regular Fit Half Sleeve Men\'s T-Shirt','10','assets/images/regular_fit.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/levi.png" alt="img" />
+            <span>Levi's</span>
+            <h6>Men's Color Full Printed Half Sleeve Shirt for Men</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <h4>$21</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('Levi\'s','Men\'s Color Full Printed Half Sleeve ','21','assets/images/levi.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/nike.jpg" alt="img" />
+            <span>nike</span>
+            <h6>
+              Men's Poly Cotton Lining Digital Printed Stitched Half Sleeve
+            </h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <h4>$18</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('nike','Men\'s Poly Cotton Half Sleeve', '18','assets/images/nike.jpg')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/kook&keech.png" alt="img" />
+            <span>kook & keech</span>
+            <h6>Digital Print Lycra Half Sleeve Multi Designs Shirt for Men</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$11</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('kook & keech','Digital Print Lycra Shirt for Men', '11','assets/images/kook&keech.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/full sleev.jpg" alt="img" />
+            <span>killer</span>
+            <h6>Men Full Sleeve cotton Shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>$19</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('killer','Men Full Sleeve Shirt','19','assets/images/full_sleev.jpg')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/cottonPant.png" alt="img" />
+            <span>spyker</span>
+            <h6>Women cotton printed pant</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <h4>$16</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('spyker','Women cotton printed pant','16','assets/images/cottonPant.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/womantop.png" alt="img" />
+            <span>wrogn</span>
+            <h6>women cotton printed top</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$11</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('wrogn','women cotton printed top', '11','assets/images/womantop.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Repair Banner Section  -->
+
+      <section id="repairService" class="section-m1">
+        <h6>Repair Services</h6>
+        <h4>Up to <span>70% off</span>- All t-shirts & Accessories</h4>
+        <button>Explore More</button>
+      </section>
+
+      <!-- New Arrival Section  -->
+
+      <section id="featursProducts" class="section-p1">
+        <div class="define">
+          <h1>New Arrivals</h1>
+          <p>Summer Collection New Morden Design</p>
+        </div>
+
+        <div class="listContainer">
+          <div class="featuresProcutsItems">
+            <img src="assets/images/adidasred.png" alt="img" />
+            <span>adidas</span>
+            <h6>Men's full long Sleeve formal shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <h4>$25</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('adidas','Men\'s full Sleeve shirt','25','assets/images/adidasred.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/roadster.png" alt="img" />
+            <span>roadster</span>
+            <h6>Men's Checkered Slim Fit Cotton Casual Shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$10</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('roadster','Men\'s Checkered Slim Shirt','10','assets/images/roadster.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/levifull.jpg" alt="img" />
+            <span>Levi's</span>
+            <h6>Men's Solid white Cotton full sleeve shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$21</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('Levi\'s','Solid white Cotton full sleeve','21','assets/images/levifull.jpg')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/nikeAs.jpg" alt="img" />
+            <span>nike</span>
+            <h6>Cartoon Astronaut T-shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$18</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('nike','Cartoon Astronaut T-shirt','18','assets/images/nikeAs.jpg')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/denim.png" alt="img" />
+            <span>kook & keech</span>
+            <h6>Men's Denim full sleeve</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$11</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('kook & keech','Men\'s Denim','11','assets/images/denim.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/shortpant.png" alt="img" />
+            <span>killer</span>
+            <h6>Men's cotton darkgrey short pant</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$19</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('killer','Men\'s cotton short','19','assets/images/shortpant.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/nikeastro.png" alt="img" />
+            <span>spyker</span>
+            <h6>Cartoon Astronaut T-shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$16</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('spyker','Cartoon Astronaut T-Shirt','16','assets/images/nikeastro.png')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+
+          <div class="featuresProcutsItems">
+            <img src="assets/images/casNke.jpg" alt="img" />
+            <span>wrogn</span>
+            <h6>Cartoon Astronout T-shirt</h6>
+
+            <div class="ratings">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <h4>$11</h4>
+            <div
+              class="cartLogo"
+              onclick="addToCart('wrogn','Cartoon t-shirts','11','assets/images/casNke.jpg')"
+            >
+              <i class="bi bi-cart-check"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Banner Section  -->
+
+      <section id="adBanner" class="section-p1">
+        <div class="bannerOne">
+          <h6>Crazy deals</h6>
+          <h2>buy 1 get 1 free</h2>
+          <span>The best classic dress is on sell at cara</span>
+          <button>Explore More</button>
+        </div>
+
+        <div class="bannerOne bannerTwo">
+          <h6>Spring/Summer</h6>
+          <h2>upcomming season</h2>
+          <span>The best classic dress is on sell at cara</span>
+          <button>Collection</button>
+        </div>
+      </section>
+
+      <!-- Another Banner Section  -->
+
+      <section id="unqBanner">
+        <div class="unqListItem unqListItemOne">
+          <h3>SEASONAL SALE</h3>
+          <span>Winter Collects -50% off</span>
+        </div>
+
+        <div class="unqListItem unqListItemTwo">
+          <h3>NEW FOOTWEAR COLLECTION</h3>
+          <span>Spring/Summer 2022</span>
+        </div>
+
+        <div class="unqListItem unqListItemThree">
+          <h3>T-SHIRTS</h3>
+          <span>New Treandy Prints</span>
+        </div>
+      </section>
+
+      <!-- footer ad section  -->
+
+      <section id="fooAd" class="section-p1">
+        <div class="footerBanner">
+          <h4>SIGN UP FOR NEWSLETTER</h4>
+          <p>
+            Get E-mail Updates about our latest shop and
+            <span>special offers</span>
+          </p>
+        </div>
+
+        <div class="footerBanner formSection">
+          <input type="text" placeholder="enter your Email address" />
+          <button type="submit">Sign Up</button>
+        </div>
+      </section>
+
+      <!-- Footer Section  -->
+
+      <footer class="section-p1" id="footerContainer">
+        <div class="footerList">
+          <div class="footerLogo">
+            <img src="assets/icons/shop.png" alt="img" style="width: 100px" />
+          </div>
+          <h5>Contact</h5>
+          <p><strong>Address:</strong>Chitkara University , Baddi</p>
+          <p><strong>Phone: </strong>(+91)2134567893 / (+91)1234567891</p>
+          <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+          <h5>Follow Us</h5>
+
+          <div class="social">
+            <a href="#"><i class="bi bi-facebook" id="facebook"></i></a>
+            <a href="#"> <i class="bi bi-twitter" id="twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram" id="insta"></i></a>
+            <a href="#"><i class="bi bi-pinterest" id="pinterest"></i></a>
+            <a href="#"><i class="bi bi-youtube" id="youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footerList">
+          <h5>About</h5>
+          <ul>
+            <li><a href=" #">About us</a></li>
+            <li><a href="#">Delivery Infomations</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footerList">
+          <h5>My Account</h5>
+
+          <ul>
+            <li><a href="#">Sing in</a></li>
+            <li><a href="#">View cart</a></li>
+            <li><a href="#">My wishlist</a></li>
+            <li><a href="#">Track my order</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+
+        <div class="footerList">
+          <h5 id="install">Install App</h5>
+          <p>Google Play</p>
+          <div class="pay-play">
+            <img class="play" src="assets/images/GPlay.png" alt="img" />
+          </div>
+          <p>Secure Payment Gateway</p>
+          <div class="gateway">
+            <img
+              src="assets/images/cashfree.png"
+              alt="img"
+              style="width: 100px"
+            />
+          </div>
+        </div>
+
+        <!-- TradeMark Section  -->
+      </footer>
+
+      <div class="tradeMark">
+        <p>
+          Made with <i class="bi bi-balloon-heart-fill"></i> by
+          <a target="_blanck"> Chitkara University Student</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Cart Popup -->
+    <div id="cartSection" class="cart-popup">
+      <div class="cart-content">
+        <span class="close-btn" onclick="closeCartPopup()">&times;</span>
+        <h2>Shopping Cart</h2>
+        <div id="cartItems"></div>
+        <div id="totalSection">
+          <div id="subtotal">Subtotal: $0</div>
+          <div id="gst">GST (18%): $0</div>
+          <div id="total">Total: $0</div>
+        </div>
+        <div class="checkout-btn" onclick="openAddressInputPopup()">
+          <button onclick="">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="itemAddedDialog" class="dialog-popup">
+      <div class="dialog-content">
+        <span class="close-btn" onclick="closeItemAddedDialog()">&times;</span>
+        <p>Item added to cart successfully!</p>
+        <div class="cart-btns">
+          <button onclick="openCartPopup()">Open Cart</button>
+          <button onclick="closeItemAddedDialog()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Address input dialog -->
+    <div id="addressInputPopup" class="dialog-popup">
+      <div class="dialog-content">
+        <span class="close-btn" onclick="closeAddressInputPopup()"
+          >&times;</span
+        >
+        <h2>Enter Your Details</h2>
+        <label for="fullName">Full Name:</label>
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Enter your full name"
+          required
+        />
+        <label for="phoneNumber">Phone Number:</label>
+        <input
+          type="tel"
+          id="phoneNumber"
+          placeholder="Enter your phone number"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="address">Address:</label>
+        <input
+          type="text"
+          id="address"
+          placeholder="Enter your address"
+          required
+        />
+        <div class="dialogButtons">
+          <button onclick="saveAndContinue()">Continue to Payment</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="paymentPopup" class="payment-popup">
+      <div class="payment-content">
+        <span class="close-btn" onclick="closePaymentPopup()">&times;</span>
+        <h2>Select Payment Method</h2>
+        <div>
+          <input type="radio" id="card" name="paymentMethod" value="card" />
+          <label for="card">Credit/Debit Card</label>
+        </div>
+        <div id="cardDetails" style="display: block">
+          <input type="text" id="cardNumber" placeholder="Card Number" />
+          <input
+            type="text"
+            id="expiryDate"
+            placeholder="Expiry Date (MM/YY)"
+          />
+          <input type="text" id="cvv" placeholder="CVV" />
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="netBanking"
+            name="paymentMethod"
+            value="netBanking"
+          />
+          <label for="netBanking">Net Banking</label>
+        </div>
+        <div>
+          <input type="radio" id="emi" name="paymentMethod" value="emi" />
+          <label for="emi">EMI</label>
+        </div>
+        <div>
+          <input type="radio" id="upi" name="paymentMethod" value="upi" />
+          <label for="upi">UPI</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="cashOnDelivery"
+            name="paymentMethod"
+            value="cashOnDelivery"
+          />
+          <label for="cashOnDelivery">Cash on Delivery</label>
+        </div>
+        <button id="continueButton" onclick="processPayment()">
+          Proceed to Pay
+        </button>
+      </div>
+    </div>
+
+    <div id="paymentCompletePopup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePaymentCompletePopup()"
+          >&times;</span
+        >
+        <h2>Payment Complete!</h2>
+        <p>Your order has been placed successfully.</p>
+        <p>Your items will be delivered to the following address:</p>
+        <p id="deliveryAddress">[Delivery Address]</p>
+        <p>Thank you for shopping with us!</p>
+      </div>
+    </div>
+
+    <script src="js/cart_script.js" type="text/javascript"></script>
+    <script src="js/address.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="js/complete.js"></script>
+  </body>
+</html>

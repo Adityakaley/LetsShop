@@ -1,0 +1,44 @@
+/* Updated dialog content */
+.dialog-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  max-width: 400px; /* Limit maximum width */
+  margin: 20px auto; /* Center the dialog */
+}
+
+/* Style for labels */
+.dialog-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for input fields */
+.dialog-content input[type="text"],
+.dialog-content input[type="tel"],
+.dialog-content input[type="email"] {
+  width: calc(
+    100% - 20px
+  ); /* Take up most of the width, accounting for padding */
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style for save and continue button */
+.dialogButtons button {
+  padding: 10px;
+  background-color: #088178;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dialogButtons button:hover {
+  background-color: #065c4c;
+}
